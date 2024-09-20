@@ -6,6 +6,7 @@ export default async function Posts() {
 
   return (
     <div className="p-10">
+      <Link href="/" className="text-pink-400">Voltar para home</Link>
       <h1 className="text-2xl">Títulos dos posts:</h1>
       <ul>
         {posts.map((post) => (

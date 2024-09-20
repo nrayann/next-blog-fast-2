@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function BlogPost({ params }) {
@@ -22,6 +23,9 @@ export default function BlogPost({ params }) {
       ) : (
         <h1>Carregando...</h1>
       )}
+      <Link href="/" className="text-pink-400">Voltar para home</Link>
+      <br />
+      <Link href="/blog/posts" className="text-pink-400">Voltar para lista de posts</Link>
     </div>
   );
 }
